@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+// font import
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+$font: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+
+$hover-color: rgb(40, 40, 40);

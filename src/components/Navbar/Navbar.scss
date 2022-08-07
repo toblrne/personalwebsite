@@ -1,0 +1,21 @@
+@import "src/globals.scss";
+
+nav {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 25px 100px;
+    font: 100% $font;
+    gap: 50px;
+    box-shadow: 0 0.2px grey;
+}
+
+.nav-element {
+    text-decoration: none;
+    color: grey;
+}
+
+.nav-element:hover {
+    color: $hover-color;
+} 
+
