@@ -20,8 +20,20 @@ const Sidebar = () => {
                     <MdLocationPin size={25} /> Vancouver, BC
                 </div>
                 <div className="school">
-                    <MdLocationPin /> University of British Columbia
+                    <MdLocationPin size={25} /> UBC
                 </div>
+                <div className="school">
+                    <MdLocationPin size={25} /> Linkedin
+                </div>
+
+                <div className="school">
+                    <MdLocationPin size={25} /> Github
+                </div>
+                <div className="school">
+                    <MdLocationPin size={25} /> Devpost
+                </div>
+
+
 
             </div>
 
