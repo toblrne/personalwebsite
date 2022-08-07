@@ -12,7 +12,7 @@ const Sidebar = () => {
                 className='profile-picture'
             />
             <div className="header-text">
-                <div className="name"> Ryan Gao</div>
+                <div className="name"> Ryan Gao </div>
                 <div className="description"> Second-year computer science student at the University of British Columbia </div>
             </div>
             <div className="icons">
@@ -32,9 +32,6 @@ const Sidebar = () => {
                 <div className="school">
                     <MdLocationPin size={25} /> Devpost
                 </div>
-
-
-
             </div>
 
 
