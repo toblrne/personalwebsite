@@ -5,7 +5,7 @@
     flex-direction: column;
     
 
-    width: 17.5vw;
+    width: 12.5vw;
     height: auto;
     padding: 20px 50px;
     margin: 5%;
@@ -17,7 +17,7 @@
 .profile-picture {
     display: flex;
     justify-content: center;
-    width: 10vw;
+    width: 50%;
     height: auto;
     margin: auto;
 }
@@ -44,17 +44,8 @@
     color: rgb(56, 56, 56);
 }
 
-@mixin icon-styles {
+.icon-styles {
     display: flex;
     align-items: flex-start;
     margin-bottom: 5px;
 }
-
-.location {
-    @include icon-styles  
-}
-
-.school {
-    @include icon-styles
-}
-

@@ -1,13 +1,17 @@
 @import "src/globals.scss";
 
 nav {
+    box-shadow: 0 0.2px grey;
+}
+
+.nav-elements {
     display: flex;
     flex-direction: row;
-    margin: 0px;
-    padding: 25px 100px;
-    font: 100% $font;
     gap: 50px;
-    box-shadow: 0 0.2px grey;
+    font: 100% $font;
+    margin: 0 20vw;
+    padding: 25px 100px;
+
 }
 
 .nav-element {

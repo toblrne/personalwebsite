@@ -6,8 +6,10 @@ import './Navbar.scss'
 const Navbar = () => {
     return (
         <nav>
-            <Link to="/" className="nav-element"> Home </Link>
-            <Link to="/temp" className="nav-element"> Temporary </Link>
+            <div className="nav-elements">
+                <Link to="/" className="nav-element"> Home </Link>
+                <Link to="/temp" className="nav-element"> Temporary </Link>
+            </div>
         </nav>
     );
 }
