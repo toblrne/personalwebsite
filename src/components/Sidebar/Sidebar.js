@@ -28,9 +28,9 @@ const Sidebar = () => {
                 <div className="icon-text">
                     <div>Vancouver, BC</div>
                     <div>UBC</div>
-                    <div>Linkedin</div>
-                    <div>Github</div>
-                    <div>Devpost</div>
+                    <a href="https://www.linkedin.com/in/ryangao01/" className="icon-link">Linkedin</a>
+                    <a href="https://github.com/toblrne" className="icon-link">Github</a>
+                    <a href="https://devpost.com/toblrne" className="icon-link">Devpost</a>
                 </div>
             </div>
         </div>

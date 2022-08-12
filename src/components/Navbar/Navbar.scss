@@ -14,14 +14,14 @@ nav {
         .nav-element {
             text-decoration: none;
             color: grey;
-        }
 
-        .nav-element:hover {
-            color: $hover-color;
+            &:hover {
+                color: $hover-color;
+            }
         }
     }
 
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 2000px) {
         .nav-elements {
             margin: 0 10vw;
         }
