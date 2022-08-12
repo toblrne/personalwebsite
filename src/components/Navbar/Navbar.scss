@@ -2,24 +2,28 @@
 
 nav {
     box-shadow: 0 0.2px grey;
+
+    .nav-elements {
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        font: 100% $font;
+        margin: 0 20vw;
+        padding: 25px 100px;
+
+        .nav-element {
+            text-decoration: none;
+            color: grey;
+        }
+
+        .nav-element:hover {
+            color: $hover-color;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+        .nav-elements {
+            margin: 0 10vw;
+        }
+    }
 }
-
-.nav-elements {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    font: 100% $font;
-    margin: 0 20vw;
-    padding: 25px 100px;
-
-}
-
-.nav-element {
-    text-decoration: none;
-    color: grey;
-}
-
-.nav-element:hover {
-    color: $hover-color;
-} 
-

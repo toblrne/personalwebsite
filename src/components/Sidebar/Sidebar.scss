@@ -3,60 +3,65 @@
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    
-    width: 12.5vw;
+
+    width: 50vw;
     height: auto;
     padding: 20px 50px;
     margin: 5%;
     border: 0.5px solid lightgrey;
     border-radius: 6px;
     gap: 2vw;
+
+    .profile-picture {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: auto;
+        margin: auto;
+    }
+
+    .header-text {
+        font: 18px $font;
+        text-align: left;
+        color: rgb(56, 56, 56);
+
+        .name {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .description {
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+    }
+
+    .icons {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        font: 13.5px $font;
+        text-align: left;
+        color: rgb(56, 56, 56);
+
+        .icon-container {
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+
+        }
+
+        .icon-text {
+            display: flex;
+            flex-direction: column;
+            gap: 17.5px;
+        }
+    }
+
 }
 
-.profile-picture {
-    display: flex;
-    justify-content: center;
-    width: 50%;
-    height: auto;
-    margin: auto;
+@media screen and (min-width: 1000px) {
+    .sidebar-container {
+        width: 30vw;
+    }
 }
-
-.header-text {
-    font: 18px $font;
-    text-align: left;
-    color: rgb(56, 56, 56);
-}
-
-.name {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.description {
-    font-size: 13.5px;
-    line-height: 1.6;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    font: 13.5px $font;
-    text-align: left;
-    color: rgb(56, 56, 56);
-}
-
-.icon-container {
-    display: flex;
-    flex-direction: column;
-    gap: 11px;
-
-}
-
-.icon-text {
-    display: flex;
-    flex-direction: column;
-    gap: 17.5px;
-}
-
-

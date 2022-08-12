@@ -8,10 +8,10 @@ import "./App.scss"
 const App = () => {
   return (
     <div className="main-container">
-      <Navbar className="nav-container" />
+      <Navbar />
       <div className="main-content-container">
-        <Sidebar className="sidebar" />
-        <Main className="main"/>
+        <Sidebar />
+        <Main />
       </div>
     </div>
   );
