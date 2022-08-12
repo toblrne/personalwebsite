@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     
-
     width: 12.5vw;
     height: auto;
     padding: 20px 50px;
@@ -23,7 +22,7 @@
 }
 
 .header-text {
-    font: 18px -apple-system, BlinkMacSystemFont, sans-serif;
+    font: 18px $font;
     text-align: left;
     color: rgb(56, 56, 56);
 }
@@ -39,13 +38,25 @@
 }
 
 .icons {
-    font: 13.5px -apple-system, BlinkMacSystemFont, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    font: 13.5px $font;
     text-align: left;
     color: rgb(56, 56, 56);
 }
 
-.icon-styles {
+.icon-container {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 5px;
+    flex-direction: column;
+    gap: 11px;
+
 }
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    gap: 17.5px;
+}
+
+

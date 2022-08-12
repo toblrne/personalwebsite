@@ -1,5 +1,7 @@
 import React from 'react';
 import { MdLocationPin } from 'react-icons/md'
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { SiDevpost } from 'react-icons/si'
 
 import './Sidebar.scss'
 
@@ -11,33 +13,27 @@ const Sidebar = () => {
                 src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Default_pfp.jpg"
                 className='profile-picture'
             />
-                <div className="header-text">
-                    <div className="name"> Ryan Gao </div>
-                    <div className="description"> Second-year computer science student at the University of British Columbia </div>
+            <div className="header-text">
+                <div className="name"> Ryan Gao </div>
+                <div className="description"> Second-year computer science student at the University of British Columbia </div>
+            </div>
+            <div className="icons">
+                <div className="icon-container">
+                    <MdLocationPin size={25} />
+                    <MdLocationPin size={25}/>
+                    <FaLinkedin size={20} /> 
+                    <FaGithub size={20} />
+                    <SiDevpost size={20}/>
                 </div>
-                <div className="icons">
-                    <div className="icon-styles">
-                        <MdLocationPin size={25} /> Vancouver, BC
-                    </div>
-                    <div className="icon-styles">
-                        <MdLocationPin size={25} /> UBC
-                    </div>
-                    <div className="icon-styles">
-                        <MdLocationPin size={25} /> Linkedin
-                    </div>
-                    <div className="icon-styles">
-                        <MdLocationPin size={25} /> Github
-                    </div>
-                    <div className="icon-styles">
-                        <MdLocationPin size={25} /> Devpost
-                    </div>
+                <div className="icon-text">
+                    <div>Vancouver, BC</div>
+                    <div>UBC</div>
+                    <div>Linkedin</div>
+                    <div>Github</div>
+                    <div>Devpost</div>
                 </div>
-            
-
-
-
+            </div>
         </div>
-
     );
 }
 
