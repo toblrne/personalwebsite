@@ -1,0 +1,39 @@
+@import 'src/globals.scss';
+
+.projectstext-container {
+    @include text-container;
+}
+
+.microcomponent-container {
+    border: 0.5px solid lightgrey;
+    border-radius: 6px;
+    font-family: $font;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    .project-title {
+        font: 24px $font;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .project-header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .github-link {
+        text-decoration: none;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    .technologies {
+        font: 14px $font;
+        margin-left: 5px;
+    }
+
+}

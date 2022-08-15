@@ -1,4 +1,4 @@
-@import "./globals.scss";
+@import "src/globals.scss";
 
 .main-container {
     height: 100vh;
@@ -9,6 +9,7 @@
     .main-content-container {
         display: flex;
         flex-direction: row;
+        align-items: flex-start;
         max-width: 100%;
         margin: 5vh 10vw;
     }
@@ -18,9 +19,4 @@
             margin: 5vh 20vw;
         }
     }
-
-
-
-
-
 }

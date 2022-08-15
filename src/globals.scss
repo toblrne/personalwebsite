@@ -10,3 +10,9 @@ body {
 $font: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
 
 $hover-color: rgb(40, 40, 40);
+
+// for homepage and projects text-container
+@mixin text-container {
+    margin: 5% 0%;
+    width: 70vw;
+}

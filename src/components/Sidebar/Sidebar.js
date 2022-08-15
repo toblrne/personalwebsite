@@ -15,7 +15,7 @@ const Sidebar = () => {
             />
             <div className="header-text">
                 <div className="name"> Ryan Gao </div>
-                <div className="description"> Second-year computer science student at the University of British Columbia </div>
+                <div className="description"> Computer Science @ UBC </div>
             </div>
             <div className="icons">
                 <div className="icon-container">

@@ -1,14 +1,24 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Main.scss'
 
 
 const Main = () => {
-    return ( 
+    return (
         <div className="homepagetext-container">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h1 className="about-text"> About </h1>
+            <div className="main-text">
+                <p> Hello! </p>
+                <p>
+                    I'm a second year student studying computer science at the University of British Columbia in Vancouver, Canada.
+                    I'm interested in front-end development and data science. Right now, I'm playing around with React and Java. When
+                    I have spare time, I enjoy cooking the finest Polish cuisines.
+                </p>
+                <p> Feel free to take a look at some of my projects <Link to="/projects" className="projects-links"> here </Link> </p>
+            </div>
         </div>
-     );
+    );
 }
- 
+
 export default Main;

@@ -1,6 +1,24 @@
 @import 'src/globals.scss';
 
 .homepagetext-container {
-    margin: 5% 0%;
+    @include text-container;
 
+    .about-text {
+        font-family: $font;
+    }
+
+    .main-text {
+        font: 18px $font;
+        color: rgb(56, 56, 56);
+        line-height: 1.6;
+    }
+
+    .projects-links {
+        text-decoration: underline;
+        color: rgb(53, 91, 194);
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
 }
