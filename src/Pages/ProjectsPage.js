@@ -20,9 +20,17 @@ const projectInformation = [
     {
         title: "Personal Website",
         github: "https://github.com/toblrne/personalwebsite",
-        technologies: "React, Firebase",
+        technologies: "HTML, SASS/SCSS, React",
         description: "Hello this is a project"
-    }
+    },
+    {
+        title: "Recipe Management System (CPSC 210 Project)",
+        technologies: "Java, Swing, JUnit"
+    },
+    {
+        title: "Chat App",
+        technologies: "HTML, CSS, React, Firebase"
+    },
 ]
 
 const mappedProjects = projectInformation.map(
@@ -36,8 +44,6 @@ const mappedProjects = projectInformation.map(
             description={elem.description}
         />
 )
-
-
 
 
 export default ProjectsPage;

@@ -9,7 +9,7 @@ const ProjectMicroComponent = ({ title, github, technologies, devpost, descripti
     return (
         <div className='microcomponent-container'>
             <div className="project-title"> {title} &nbsp;
-                <a href={github} className="github-link"> <FaGithub size={20} /> &nbsp; Github </a>
+                {github ? <a href={github} className="github-link"> <FaGithub size={20} /> &nbsp; Github </a> : null }
             </div>
             <div className="project-header">
                 <div className="technologies"> Technologies: {technologies} </div>
