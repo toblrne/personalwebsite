@@ -1,7 +1,18 @@
 @import 'src/globals.scss';
 
-.projectstext-container {
-    @include text-container;
+@mixin link {
+
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: 14px $font;
+    color:rgb(56, 56, 56);
+
+    &:visited {
+        color: inherit;
+    }
+
 }
 
 .microcomponent-container {
@@ -10,30 +21,42 @@
     font-family: $font;
     padding: 20px;
     margin-bottom: 20px;
+    color: rgb(56, 56, 56);
 
     .project-title {
-        font: 24px $font;
+        font: 20px $font;
         margin-bottom: 10px;
         font-weight: 600;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .github-link {
+            @include link
+        }
     }
 
     .project-header {
         display: flex;
         flex-direction: row;
-        align-items: flex-start;
-    }
+        align-items: center;
+        justify-content: space-between;
 
-    .github-link {
-        text-decoration: none;
+        .technologies {
+            font: 14px $font;
+            font-weight: 500;
+            // border: 2px solid;
+        }
 
-        &:visited {
-            color: inherit;
+        .devpost-link {
+            @include link
         }
     }
 
-    .technologies {
-        font: 14px $font;
-        margin-left: 5px;
+    .project-description {
+        padding-top: 10px;
+        font-size: 14px;
     }
 
 }
+

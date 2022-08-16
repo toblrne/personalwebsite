@@ -1,24 +1,25 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa'
+import { SiDevpost } from 'react-icons/si'
+
+
 import './Projects.scss'
 
-const ProjectMicroComponent = () => {
+const ProjectMicroComponent = ({ title, github, technologies, devpost, description }) => {
     return (
         <div className='microcomponent-container'>
-
-            <div className="project-title"> Personal Website </div>
-
-
+            <div className="project-title"> {title} &nbsp;
+                <a href={github} className="github-link"> <FaGithub size={20} /> &nbsp; Github </a>
+            </div>
             <div className="project-header">
-                <a href="https://github.com/toblrne" className="github-link"> <FaGithub size={20} /> </a>
-                <div className="technologies"> React, Firebase</div>
+                <div className="technologies"> Technologies: {technologies} </div>
+                {devpost ? (<a href={devpost} className="devpost-link"> <SiDevpost size={20} /> &nbsp; Devpost </a>) : null}
             </div>
 
-
-
-
+            <div className="project-description">
+                {description}
+            </div>
         </div>
-
     );
 }
 

@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './globals.scss'
 
 
-import App from './Pages/Homepage/App'
-import Projects from './Pages/ProjectsPage/ProjectsPage'
+import App from './Pages/App'
+import Projects from './Pages/ProjectsPage'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <BrowserRouter>
