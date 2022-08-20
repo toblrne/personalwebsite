@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import { IconContext } from "react-icons"
 import { MdLocationPin } from 'react-icons/md'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import { SiDevpost } from 'react-icons/si'
@@ -20,10 +21,14 @@ const Sidebar = () => {
             <div className="icons">
                 <div className="icon-container">
                     <MdLocationPin size={25} />
-                    <MdLocationPin size={25}/>
-                    <FaLinkedin size={20} /> 
+                    <MdLocationPin size={25} />
+                    <IconContext.Provider value={{ color: "#0077b5" }}>
+                        <FaLinkedin size={20} />
+                    </IconContext.Provider>
                     <FaGithub size={20} />
-                    <SiDevpost size={20}/>
+                    <IconContext.Provider value={{ color: "#003e54" }}>
+                        <SiDevpost size={20} />
+                    </IconContext.Provider>
                 </div>
                 <div className="icon-text">
                     <div>Vancouver, BC</div>
@@ -33,7 +38,7 @@ const Sidebar = () => {
                     <a href="https://devpost.com/toblrne" className="icon-link">Devpost</a>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 

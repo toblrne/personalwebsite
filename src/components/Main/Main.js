@@ -12,7 +12,7 @@ const Main = () => {
                 <p> Hello! </p>
                 <p>
                     I'm a second year student studying computer science at the University of British Columbia in Vancouver, Canada.
-                    I'm interested in front-end development and data science. Right now, I'm playing around with React and Java. When
+                    I'm interested in web development and data science. Right now, I'm playing around with React and Java. When
                     I have spare time, I enjoy cooking the finest Polish cuisines.
                 </p>
                 <p> Feel free to take a look at some of my projects <Link to="/projects" className="projects-links"> here </Link> </p>

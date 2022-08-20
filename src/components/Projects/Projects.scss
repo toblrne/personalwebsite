@@ -1,20 +1,5 @@
 @import 'src/globals.scss';
 
-@mixin link {
-
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font: 14px $font;
-    color:rgb(56, 56, 56);
-
-    &:visited {
-        color: inherit;
-    }
-
-}
-
 .microcomponent-container {
     border: 0.5px solid lightgrey;
     border-radius: 6px;
@@ -31,8 +16,22 @@
         flex-direction: row;
         justify-content: space-between;
 
-        .github-link {
-            @include link
+        .combined-links {
+            display: flex;
+            flex-direction: row;
+
+            .single-link {
+                text-decoration: none;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                font: 14px $font;
+                color: rgb(56, 56, 56);
+
+                &:visited {
+                    color: inherit;
+                }
+            }
         }
     }
 
@@ -48,8 +47,11 @@
             // border: 2px solid;
         }
 
-        .devpost-link {
-            @include link
+        .date {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font: 14px $font;
         }
     }
 
@@ -57,6 +59,4 @@
         padding-top: 10px;
         font-size: 14px;
     }
-
 }
-

@@ -1,0 +1,19 @@
+@import 'src/globals.scss';
+
+footer {
+    border-top: 0.2px rgb(191, 191, 191) solid;
+    background-color: rgb(242, 243, 243);
+
+    .footer-container {
+        font: 12px $font;
+        margin: 0 20vw;
+        padding: 50px 100px;
+        color: rgb(162, 168, 172);
+
+        .source-link {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
