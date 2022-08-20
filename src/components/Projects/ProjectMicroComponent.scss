@@ -5,8 +5,9 @@
     border-radius: 6px;
     font-family: $font;
     padding: 20px;
-    margin-bottom: 20px;
+    margin: 0px 20px 20px 0px;
     color: rgb(56, 56, 56);
+    
 
     .project-title {
         font: 18px $font;
@@ -16,22 +17,8 @@
         flex-direction: row;
         justify-content: space-between;
 
-        .combined-links {
-            display: flex;
-            flex-direction: row;
-
-            .single-link {
-                text-decoration: none;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                font: 14px $font;
-                color: rgb(56, 56, 56);
-
-                &:visited {
-                    color: inherit;
-                }
-            }
+        .date {
+            font: 14px $font;
         }
     }
 
@@ -42,21 +29,43 @@
         justify-content: space-between;
 
         .technologies {
+            display: flex;
+            flex-wrap: wrap;
             font: 14px $font;
             font-weight: 500;
             // border: 2px solid;
-        }
-
-        .date {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            font: 14px $font;
         }
     }
 
     .project-description {
         padding-top: 10px;
         font-size: 14px;
+        padding-bottom: 10px;
+
+        .description-list {
+            padding-left: 20px;
+        }
+    }
+
+    .combined-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .single-link {
+            text-decoration: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font: 14px $font;
+            color: rgb(56, 56, 56);
+
+            &:visited {
+                color: inherit;
+            }
+        }
     }
 }
+
+
