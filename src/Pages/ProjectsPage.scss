@@ -9,13 +9,8 @@
 
     .projectstext-container {
         display: flex;
-        flex-direction: column;
-        margin: 5vh 30vw;
-    }
-
-    @media screen and (min-width: 1000px) {
-        .projectstext-container {
-            margin: 5vh 25vw;
-        }
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 5vh 15vw;
     }
 }

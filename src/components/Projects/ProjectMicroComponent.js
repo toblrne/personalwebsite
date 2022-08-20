@@ -7,7 +7,6 @@ import { SiDevpost } from 'react-icons/si'
 import './ProjectMicroComponent.scss'
 
 const ProjectMicroComponent = ({ title, github, technologies, devpost, description, date }) => {
-    const descriptionList = description.map(elem => <li style={{marginBottom: '5px'}}>{elem}</li>)
 
     return (
         <div className='microcomponent-container'>
@@ -16,7 +15,7 @@ const ProjectMicroComponent = ({ title, github, technologies, devpost, descripti
                 <div className="technologies">{technologies} </div>
             </div>
             <div className="project-description">
-                <ul class="description-list">{descriptionList}</ul>
+                {description}
             </div>
             <div className="combined-links">
                 {github ? <a href={github} className="single-link"> <FaGithub size={20} /> &nbsp; Github </a> : null} &nbsp; &nbsp;

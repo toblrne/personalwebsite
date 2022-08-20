@@ -24,27 +24,20 @@ const projectInformation = [
     {
         title: "Personal Website",
         github: "https://github.com/toblrne/personalwebsite",
-        technologies: "HTML, SASS/SCSS, JavaScript, React",
-        description: ["Hello this is a project Hello this is a project Hello this is a projectHello this is a project Hello this is a project Hello this is a project Hello this is a project Hello this is a project Hello this is a project Hello this is a project", "Hello"],
-        date: "August 2022"
+        technologies: "HTML, SCSS, JavaScript, React.js, Redux, Firebase",
+        description: "First iteration of my personal website. Implemented a light-dark mode toggle using Redux. Deployed using Firebase. ",
 
     },
     {
-        title: "Recipe Management System (CPSC 210 Project)",
+        title: "Recipe Management System",
         technologies: "Java, Swing, JUnit",
-        description: ["Hello this is a project", "Hello"]
+        description: "CRUD application built using Java Swing. Allows users to view, add, vote on, save, and load recipes."
     },
     {
         title: "Chat App",
-        technologies: "HTML, CSS, JavaScript",
-        description: ["Hello this is a project", "Hello"]
-    },
-    {
-        title: "Statistical Analysis of Socioeconomic Factors on Income (DSCI 100 Project)",
-        technologies: "R",
-        description: ["Hello this is a project", "Hello"]
-    },
-    
+        technologies: "HTML, CSS, JavaScript, React.js, Firebase",
+        description: "Simple chat app that allows users to send and clear messages. Deployed using Firebase."
+    } 
 ]
 
 const mappedProjects = projectInformation.map(
@@ -57,7 +50,6 @@ const mappedProjects = projectInformation.map(
             devpost={elem.devpost}
             description={elem.description}
             date={elem.date}
-            image={elem.image}
         />
 )
 

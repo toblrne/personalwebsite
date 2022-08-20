@@ -7,10 +7,11 @@
     padding: 20px;
     margin: 0px 20px 20px 0px;
     color: rgb(56, 56, 56);
+    width: 17.5vw;
     
 
     .project-title {
-        font: 18px $font;
+        font: 20px $font;
         margin-bottom: 10px;
         font-weight: 600;
         display: flex;
@@ -18,7 +19,7 @@
         justify-content: space-between;
 
         .date {
-            font: 14px $font;
+            font: 16px $font;
         }
     }
 
@@ -31,7 +32,7 @@
         .technologies {
             display: flex;
             flex-wrap: wrap;
-            font: 14px $font;
+            font: 15px $font;
             font-weight: 500;
             // border: 2px solid;
         }
@@ -40,7 +41,7 @@
     .project-description {
         padding-top: 10px;
         font-size: 14px;
-        padding-bottom: 10px;
+        padding-bottom: 30px;
 
         .description-list {
             padding-left: 20px;
