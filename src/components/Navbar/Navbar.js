@@ -11,6 +11,7 @@ const Navbar = () => {
                 <Link to="/" className="nav-element"> Home </Link>
                 <Link to="/projects" className="nav-element"> Projects </Link>
             </div>
+            <button className="mode-toggle"> Toggle </button>
         </nav>
     );
 }

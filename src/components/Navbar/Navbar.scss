@@ -2,6 +2,9 @@
 
 nav {
     box-shadow: 0 0.2px grey;
+    display: flex;
+    justify-content: space-between;
+    
 
     .nav-elements {
         display: flex;
@@ -26,4 +29,17 @@ nav {
     //         margin: 0 10vw;
     //     }
     // }
+
+    .mode-toggle {
+        margin: 2vh 10vw;
+        background-color: white;
+        border: 0.5px solid grey;
+        border-radius: 20px;
+        font: 75% $font;
+        color: black;
+
+        &:hover {
+            background-color: rgb(220, 220, 220);
+        }
+    }
 }
