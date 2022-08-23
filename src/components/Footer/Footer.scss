@@ -4,6 +4,12 @@ footer {
     border-top: 0.2px rgb(191, 191, 191) solid;
     background-color: rgb(242, 243, 243);
 
+    &.dark {
+        background-color: #282828;
+        border-top: 0.2px black solid;
+        transition: all 0.5s ease;
+    }
+
     .footer-container {
         font: 12px $font;
         margin: 0 20vw;

@@ -7,12 +7,24 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &.dark {
+        background-color: #212121        ;
+        transition: all 0.5s ease;
+    }
+
+    &.light {
+        background-color: white;
+        transition: all 0.5s ease;
+    }
+
     .main-content-container {
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         max-width: 100%;
         margin: 5vh 10vw;
+
+        
     }
 
     @media screen and (min-width: 2000px) {

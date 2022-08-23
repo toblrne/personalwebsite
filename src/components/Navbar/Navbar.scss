@@ -1,10 +1,22 @@
 @import "src/globals.scss";
 
 nav {
-    box-shadow: 0 0.2px grey;
+    box-shadow: 0 0.2px 2px grey;
     display: flex;
     justify-content: space-between;
-    
+
+
+    // #32353b
+    &.dark {
+        background-color: #282828;
+        transition: all 0.5s ease;
+        box-shadow: 0 1px 1px black;
+    }
+
+    &.light {
+        background-color: white;
+        transition: all 0.5s ease;
+    }
 
     .nav-elements {
         display: flex;
@@ -18,9 +30,22 @@ nav {
             text-decoration: none;
             color: grey;
 
-            &:hover {
-                color: $hover-color;
+            &.dark {
+                color: rgb(161, 161, 163);
+
+                &:hover {
+                    color: rgb(200, 200, 200);
+                }
             }
+
+            &.light {
+                &:hover {
+                    color: $hover-color;
+                }
+
+            }
+
+
         }
     }
 

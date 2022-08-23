@@ -12,18 +12,36 @@
     border-radius: 6px;
     gap: 2vw;
 
+    &.dark {
+        background-color: #2e2e2e;
+        transition: background-color 0.5s ease;
+        border: none;
+    }
+
+    &.light {
+        background-color: white;
+        transition: background-color 0.5s ease;
+    }
+    
+
     .profile-picture {
         display: flex;
         justify-content: center;
         width: 50%;
         height: auto;
         margin: auto;
+        border-radius: 50%;
     }
 
     .header-text {
         font: 18px $font;
         text-align: left;
         color: rgb(56, 56, 56);
+
+        &.dark {
+            color: white;
+            transition: all ease 0.5;
+        }
 
         .name {
             margin-bottom: 10px;
@@ -55,6 +73,11 @@
             display: flex;
             flex-direction: column;
             gap: 17.5px;
+
+            &.dark {
+                color: #CED0D7;
+                transition: all ease 0.5;
+            }
         }
 
         .icon-link {

@@ -5,12 +5,22 @@
 
     .about-text {
         font-family: $font;
+
+        &.dark {
+            color: rgb(230, 230, 230);
+        }
+
+        
     }
 
     .main-text {
         font: 18px $font;
         color: rgb(56, 56, 56);
         line-height: 1.6;
+
+        &.dark {
+            color: rgb(183, 182, 182);
+        }
     }
 
     .projects-links {

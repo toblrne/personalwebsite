@@ -6,9 +6,14 @@ import Footer from '../components/Footer/Footer';
 
 import "./App.scss"
 
+import { useSelector } from 'react-redux'
+
 const App = () => {
+
+  const { mode } = useSelector((state) => state.toggleMode);
+
   return (
-    <div className="main-container">
+    <div className={`${"main-container"} ${mode}`}>
       <div>
         <Navbar />
         <div className="main-content-container">

@@ -1,14 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux'
 
 import './Main.scss'
 
 
 const Main = () => {
+
+    const { mode } = useSelector((state) => state.toggleMode);
+
     return (
         <div className="homepagetext-container">
-            <h1 className="about-text"> About </h1>
-            <div className="main-text">
+            <h1 className={`${"about-text"} ${mode}`}> About </h1>
+            <div className={`${"main-text"} ${mode}`}>
                 <p> Hello! </p>
                 <p>
                     I'm a second year student studying computer science at the University of British Columbia in Vancouver, Canada.
