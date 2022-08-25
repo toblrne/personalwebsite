@@ -29,18 +29,18 @@ const projectInformation = [
     {
         title: "Personal Website",
         github: "https://github.com/toblrne/personalwebsite",
-        technologies: "HTML, SCSS, JavaScript, React.js, Redux, Firebase",
+        technologies: ["HTML", "SCSS", "JavaScript", "React.js", "Redux", "Firebase"],
         description: "First iteration of my personal website. Implemented a light-dark mode toggle using Redux. Deployed using Firebase. ",
 
     },
     {
         title: "Recipe Management System",
-        technologies: "Java, Swing, JUnit",
+        technologies: ["Java", "Swing", "JUnit"],
         description: "CRUD application built using Java Swing. Allows users to view, add, vote on, save, and load recipes."
     },
     {
         title: "Chat App",
-        technologies: "HTML, CSS, JavaScript, React.js, Firebase",
+        technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
         description: "Simple chat app that allows users to send and clear messages. Deployed using Firebase."
     } 
 ]

@@ -19,7 +19,7 @@ const Main = () => {
                     I'm interested in web development and data science. Right now, I'm playing around with React and Java. When
                     I have spare time, I enjoy cooking the finest Polish cuisines.
                 </p>
-                <p> Feel free to take a look at some of my projects <Link to="/projects" className="projects-links"> here </Link> </p>
+                <p> Feel free to take a look at some of my projects <Link to="/projects" className={`${"projects-links"} ${mode}`}> here </Link> </p>
             </div>
         </div>
     );

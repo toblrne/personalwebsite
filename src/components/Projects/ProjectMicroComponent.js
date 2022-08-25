@@ -5,16 +5,21 @@ import { SiDevpost } from 'react-icons/si'
 
 import { useSelector } from 'react-redux'
 import './ProjectMicroComponent.scss'
+import TechnologyIcon from './TechnologyIcon';
 
 const ProjectMicroComponent = ({ title, github, technologies, devpost, description, date }) => {
 
     const { mode } = useSelector((state) => state.toggleMode);
 
+    const mappedTechnologies = technologies.map(elem => <TechnologyIcon elem={elem}/>)
+
+
+
     return (
         <div className={`${"microcomponent-container"} ${mode}`}>
             <div className="project-title"> {title} &nbsp; <div className="date">{date} </div></div>
             <div className="project-header">
-                <div className="technologies">{technologies} </div>
+                <div className="technologies">{mappedTechnologies} </div>
             </div>
             <div className="project-description">
                 {description}

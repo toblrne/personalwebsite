@@ -25,10 +25,18 @@
 
     .projects-links {
         text-decoration: underline;
-        color: rgb(53, 91, 194);
+        color: rgb(35, 82, 177);
 
         &:hover {
             color: $hover-color;
+        }
+
+        &.dark {
+            color: rgb(7, 123, 255);
+
+            &:hover {
+                color: white;
+            }
         }
     }
 }
