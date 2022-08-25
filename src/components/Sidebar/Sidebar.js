@@ -28,15 +28,35 @@ const Sidebar = () => {
             </div>
             <div className="icons">
                 <div className="icon-container">
-                    <MdLocationPin size={25} />
-                    <MdLocationPin size={25} />
-                    <IconContext.Provider value={{ color: "#0077b5" }}>
-                        <FaLinkedin size={20} />
-                    </IconContext.Provider>
-                    <FaGithub size={20} />
-                    <IconContext.Provider value={{ color: "#003e54" }}>
-                        <SiDevpost size={20} />
-                    </IconContext.Provider>
+                    {mode === "light" ?
+                        <MdLocationPin size={25} /> :
+                        <IconContext.Provider value={{ color: "white" }}>
+                            <MdLocationPin size={25} />
+                        </IconContext.Provider>}
+                    {mode === "light" ?
+                        <MdLocationPin size={25} /> :
+                        <IconContext.Provider value={{ color: "white" }}>
+                            <MdLocationPin size={25} />
+                        </IconContext.Provider>}
+                    {mode === "light" ?
+                        <IconContext.Provider value={{ color: "#0072b1" }}>
+                            <FaLinkedin size={20} />
+                        </IconContext.Provider> :
+                        <IconContext.Provider value={{ color: "white" }}>
+                            <FaLinkedin size={20} />
+                        </IconContext.Provider>}
+                    {mode === "light" ?
+                        <FaGithub size={20} /> :
+                        <IconContext.Provider value={{ color: "white" }}>
+                            <FaGithub size={20} />
+                        </IconContext.Provider>}
+                    {mode === "light" ?
+                        <IconContext.Provider value={{ color: "#034156" }}>
+                            <SiDevpost size={20} />
+                        </IconContext.Provider> :
+                        <IconContext.Provider value={{ color: "white" }}>
+                            <SiDevpost size={20} />
+                        </IconContext.Provider>}
                 </div>
                 <div className={`${"icon-text"} ${mode} `}>
                     <div>Vancouver, BC</div>

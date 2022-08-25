@@ -8,6 +8,18 @@
     margin: 0px 20px 20px 0px;
     color: rgb(56, 56, 56);
     width: 17.5vw;
+
+    &.dark {
+        background-color: #2e2e2e;
+        transition: all 0.5s ease;
+        color: rgb(215, 215, 215);
+        border-color: #2e2e2e;  
+    }
+
+    &.light {
+        background-color: white;
+        transition: all 0.5s ease;
+    }
     
 
     .project-title {

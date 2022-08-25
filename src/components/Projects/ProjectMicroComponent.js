@@ -3,13 +3,15 @@ import { IconContext } from 'react-icons'
 import { FaGithub } from 'react-icons/fa'
 import { SiDevpost } from 'react-icons/si'
 
-
+import { useSelector } from 'react-redux'
 import './ProjectMicroComponent.scss'
 
 const ProjectMicroComponent = ({ title, github, technologies, devpost, description, date }) => {
 
+    const { mode } = useSelector((state) => state.toggleMode);
+
     return (
-        <div className='microcomponent-container'>
+        <div className={`${"microcomponent-container"} ${mode}`}>
             <div className="project-title"> {title} &nbsp; <div className="date">{date} </div></div>
             <div className="project-header">
                 <div className="technologies">{technologies} </div>

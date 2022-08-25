@@ -10,6 +10,11 @@ footer {
         transition: all 0.5s ease;
     }
 
+    &.light {
+        background-color: white;
+        transition: all 0.5s ease;
+    }
+
     .footer-container {
         font: 12px $font;
         margin: 0 20vw;

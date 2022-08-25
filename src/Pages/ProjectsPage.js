@@ -3,11 +3,16 @@ import Navbar from '../components/Navbar/Navbar'
 import ProjectMicroComponent from '../components/Projects/ProjectMicroComponent';
 import Footer from '../components/Footer/Footer';
 
+import { useSelector } from 'react-redux'
+
 import "./ProjectsPage.scss"
 
 const ProjectsPage = () => {
+
+    const { mode } = useSelector((state) => state.toggleMode);
+
     return (
-        <div className="projectspage-container">
+        <div className={`${"projectspage-container"} ${mode}`}>
             <div>
                 <Navbar />
                 <div className="projectstext-container">

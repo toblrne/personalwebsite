@@ -7,6 +7,19 @@
     flex-direction: column;
     justify-content: space-between;
 
+    &.dark {
+        background-color: #212121;
+        transition: background-color 0.5s ease;
+        border: none;
+    }
+
+    &.light {
+        background-color: white;
+        transition: background-color 0.5s ease;
+    }
+
+
+
     .projectstext-container {
         display: flex;
         flex-direction: row;

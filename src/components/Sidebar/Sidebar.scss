@@ -14,13 +14,13 @@
 
     &.dark {
         background-color: #2e2e2e;
-        transition: background-color 0.5s ease;
-        border: none;
+        transition: all 0.5s ease;
+        border-color: #2e2e2e;
     }
 
     &.light {
         background-color: white;
-        transition: background-color 0.5s ease;
+        transition: all 0.5s ease;
     }
     
 

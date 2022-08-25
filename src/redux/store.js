@@ -3,6 +3,6 @@ import toggleReducer from "./mode"
 
 export default configureStore({
     reducer: {
-        toggleMode: toggleReducer
+        toggleMode: toggleReducer // 2
     }
 })
