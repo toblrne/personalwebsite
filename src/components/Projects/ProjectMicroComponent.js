@@ -2,18 +2,17 @@ import React from 'react';
 import { IconContext } from 'react-icons'
 import { FaGithub } from 'react-icons/fa'
 import { SiDevpost } from 'react-icons/si'
+import { CgWebsite } from 'react-icons/cg'
 
 import { useSelector } from 'react-redux'
 import './ProjectMicroComponent.scss'
 import TechnologyIcon from './TechnologyIcon';
 
-const ProjectMicroComponent = ({ title, github, technologies, devpost, description, date }) => {
+const ProjectMicroComponent = ({ title, github, technologies, devpost, description, date, demo }) => {
 
     const { mode } = useSelector((state) => state.toggleMode);
 
-    const mappedTechnologies = technologies.map(elem => <TechnologyIcon elem={elem}/>)
-
-
+    const mappedTechnologies = technologies.map(elem => <TechnologyIcon elem={elem} />)
 
     return (
         <div className={`${"microcomponent-container"} ${mode}`}>
@@ -29,7 +28,8 @@ const ProjectMicroComponent = ({ title, github, technologies, devpost, descripti
                 {devpost ? (<a href={devpost} className="single-link">
                     <IconContext.Provider value={{ color: "#003e54" }}>
                         <SiDevpost size={20} />
-                    </IconContext.Provider>&nbsp; Devpost </a>) : null}
+                    </IconContext.Provider>&nbsp; Devpost </a>) : null} &nbsp; &nbsp;
+                {demo ? <a href={demo} className="single-link"> <CgWebsite size={20} /> &nbsp; Live Demo </a> : null}
             </div>
         </div>
     );

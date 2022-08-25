@@ -13,14 +13,14 @@
         background-color: #2e2e2e;
         transition: all 0.5s ease;
         color: rgb(215, 215, 215);
-        border-color: #2e2e2e;  
+        border-color: #2e2e2e;
     }
 
     &.light {
         background-color: white;
         transition: all 0.5s ease;
     }
-    
+
 
     .project-title {
         font: 20px $font;
@@ -76,9 +76,16 @@
             &:visited {
                 color: inherit;
             }
+
+            &.dark {
+                color: rgb(56, 56, 56);
+                transition: all 0.5s ease; 
+
+            }
         }
     }
 }
+
 
 .technology-icon {
     background-color: #484747;
@@ -94,4 +101,3 @@
         border: 2px lightgrey solid;
     }
 }
-

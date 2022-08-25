@@ -31,6 +31,7 @@ const projectInformation = [
         github: "https://github.com/toblrne/personalwebsite",
         technologies: ["HTML", "SCSS", "JavaScript", "React.js", "Redux", "Firebase"],
         description: "First iteration of my personal website. Implemented a light-dark mode toggle using Redux. Deployed using Firebase. ",
+        demo: "https://ryangao.dev"
 
     },
     {
@@ -55,6 +56,7 @@ const mappedProjects = projectInformation.map(
             devpost={elem.devpost}
             description={elem.description}
             date={elem.date}
+            demo={elem.demo}
         />
 )
 
