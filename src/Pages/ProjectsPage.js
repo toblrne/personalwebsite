@@ -30,7 +30,7 @@ const projectInformation = [
         title: "Personal Website",
         github: "https://github.com/toblrne/personalwebsite",
         technologies: ["HTML", "SCSS", "JavaScript", "React.js", "Redux", "Firebase"],
-        description: "First iteration of my personal website. Implemented a light-dark mode toggle using Redux. Deployed using Firebase. ",
+        description: "First iteration of my personal website. Implemented a light-dark mode toggle using Redux Toolkit. Deployed using Firebase. ",
         demo: "https://ryangao.dev"
 
     },
