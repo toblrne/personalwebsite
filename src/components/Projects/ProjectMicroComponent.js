@@ -24,12 +24,12 @@ const ProjectMicroComponent = ({ title, github, technologies, devpost, descripti
                 {description}
             </div>
             <div className="combined-links">
-                {github ? <a href={github} className="single-link"> <FaGithub size={20} /> &nbsp; Github </a> : null} &nbsp; &nbsp;
-                {devpost ? (<a href={devpost} className="single-link">
+                {github ? <a href={github} className={`${"single-link"} ${mode}`}> <FaGithub size={20} /> &nbsp; Github </a> : null} &nbsp; &nbsp;
+                {devpost ? (<a href={devpost} className={`${"single-link"} ${mode}`}>
                     <IconContext.Provider value={{ color: "#003e54" }}>
                         <SiDevpost size={20} />
                     </IconContext.Provider>&nbsp; Devpost </a>) : null} &nbsp; &nbsp;
-                {demo ? <a href={demo} className="single-link"> <CgWebsite size={20} /> &nbsp; Live Demo </a> : null}
+                {demo ? <a href={demo} className={`${"single-link"} ${mode}`}> <CgWebsite size={20} /> &nbsp; Live Demo </a> : null}
             </div>
         </div>
     );

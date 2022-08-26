@@ -19,6 +19,7 @@
     &.light {
         background-color: white;
         transition: all 0.5s ease;
+        color: rgb(56, 56, 56);
     }
 
 
@@ -73,14 +74,22 @@
             font: 14px $font;
             color: rgb(56, 56, 56);
 
-            &:visited {
-                color: inherit;
+            &.dark {
+                color: rgb(215, 215, 215);
+                transition: all 0.5s ease;
+
+                &:visited {
+                    color: inherit;
+                }
             }
 
-            &.dark {
+            &.light {
                 color: rgb(56, 56, 56);
-                transition: all 0.5s ease; 
+                transition: all 0.5s ease;
 
+                &:visited {
+                    color: inherit;
+                }
             }
         }
     }
