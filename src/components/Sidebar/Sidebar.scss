@@ -18,6 +18,11 @@
         width: 56vw;
     }
 
+    @media only screen and (min-width: 480px) and (max-width: 850px) {
+        width: 60vw;
+    }
+
+
     &.dark {
         background-color: #2e2e2e;
         transition: all 0.5s ease;
