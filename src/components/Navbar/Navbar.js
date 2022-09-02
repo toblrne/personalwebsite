@@ -21,15 +21,13 @@ const Navbar = () => {
                 <Link to="/" className={`${"nav-element"} ${mode}`}> Home </Link>
                 <Link to="/projects" className={`${"nav-element"} ${mode}`}> Projects  </Link>
             </div>
-
             {mode === "dark" ?
                 <button className={`${"mode-toggle"} ${mode}`} onClick={() => dispatch(toggle())}>
                     <IconContext.Provider value={{ color: "yellow" }}>
                         <BsFillSunFill />
                     </IconContext.Provider>  </button> :
-                <button className={`${"mode-toggle"} ${mode}`} onClick={() => dispatch(toggle())}> 
-                <BsFillMoonFill /> </button>}
-
+                <button className={`${"mode-toggle"} ${mode}`} onClick={() => dispatch(toggle())}>
+                    <BsFillMoonFill /> </button>}
         </nav> // 3
     );
 }

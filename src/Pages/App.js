@@ -14,9 +14,9 @@ const App = () => {
 
   return (
     <div className={`${"main-container"} ${mode}`}>
-      <div>
+      <div className={`${"secondary-container"} ${mode}`}>
         <Navbar />
-        <div className="main-content-container">
+        <div className={`${"main-content-container"} ${mode}`}>
           <Sidebar />
           <Main />
         </div>

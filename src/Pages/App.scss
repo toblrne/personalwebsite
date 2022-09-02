@@ -1,8 +1,8 @@
 @import "src/globals.scss";
 
 .main-container {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,15 +17,39 @@
         transition: all 0.5s ease;
     }
 
-    .main-content-container {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        max-width: 100%;
-        margin: 5vh 10vw;
+    .secondary-container {
+        &.dark {
+            background-color: #212121;
+            transition: all 0.5s ease;
+        }
 
-        
+        &.light {
+            background-color: white;
+            transition: all 0.5s ease;
+        }
+
+        .main-content-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            max-width: 100%;
+            margin: 5vh 10vw;
+
+            &.dark {
+                background-color: #212121;
+                transition: all 0.5s ease;
+            }
+
+            &.light {
+                background-color: white;
+                transition: all 0.5s ease;
+            }
+
+
+        }
     }
+
+
 
     @media screen and (min-width: 2000px) {
         .main-content-container {

@@ -13,11 +13,10 @@ const ProjectsPage = () => {
 
     return (
         <div className={`${"projectspage-container"} ${mode}`}>
-            <div>
+            <div className={`${"secondaryprojectspage-container"} ${mode}`}>
                 <Navbar />
                 <div className="projectstext-container">
                     {mappedProjects}
-                    
                 </div>
             </div>
             <Footer />
@@ -26,6 +25,14 @@ const ProjectsPage = () => {
 }
 
 const projectInformation = [
+    {
+        title: "This Day in History",
+        github: "https://github.com/toblrne/wikidate",
+        technologies: ["HTML", "SCSS", "JavaScript", "React.js", "Firebase"],
+        description: "Web app that takes data from a Wikipedia API and randomly displays what event happened on a specific day.",
+        demo: "https://wikidate.web.app/"
+
+    },
     {
         title: "Personal Website",
         github: "https://github.com/toblrne/personalwebsite",
@@ -37,13 +44,13 @@ const projectInformation = [
     {
         title: "Recipe Management System",
         technologies: ["Java", "Swing", "JUnit"],
-        description: "CRUD application built using Java Swing. Allows users to view, add, vote on, save, and load recipes."
+        description: "CRUD application built using Java Swing. Allows users to view, add, vote on, save, and load recipes using a GUI."
     },
     {
         title: "Chat App",
-        technologies: ["HTML", "CSS", "JavaScript", "Firebase"],
-        description: "Simple chat app that allows users to send and clear messages. Deployed using Firebase."
-    } 
+        technologies: ["HTML", "CSS", "JavaScript", "React.js", "Firebase"],
+        description: "Simple chat app that allows users to send and clear messages. Backend done with Firebase."
+    }
 ]
 
 const mappedProjects = projectInformation.map(
