@@ -43,13 +43,16 @@ const projectInformation = [
     },
     {
         title: "Recipe Management System",
+        github: "https://github.com/toblrne/recipemanagementsystem",
         technologies: ["Java", "Swing", "JUnit"],
         description: "CRUD application built using Java Swing. Allows users to view, add, vote on, save, and load recipes using a GUI."
     },
     {
         title: "Chat App",
+        github: "https://github.com/toblrne/chatapp",
         technologies: ["HTML", "CSS", "JavaScript", "React.js", "Firebase"],
-        description: "Simple chat app that allows users to send and clear messages. Backend done with Firebase."
+        description: "Simple chat app that allows users to send and clear messages. Data hosted on a Firebase Realtime Database",
+        demo: "https://chatapp-893e3.web.app/"
     }
 ]
 
